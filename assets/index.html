@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wishlist</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+
+    <img id=logo src="img/xmas-tree.jpg" alt="logo"/>
+    <h1>Make-a-wishlist for Santa!</h1>
+</header>
+
+<main>
+    <form>
+        <fieldset id="firstFieldset">
+            <h2>Some information about you</h2>
+
+            <label for="name">Who are you?</label>
+            <input id="name" type="text">
+
+            <label for="email">Where shall we mail your pending approval to?</label>
+            <input id="email" placeholder="someone@somewhere.com" type="text">
+
+            <label for="gsm">Can E.T. phone home?</label>
+            <input type="tel" id="gsm" name="gsm">
+
+            <label for="planet">Where are you from?</label>
+            <select id="planet">
+                <option>Earth</option>
+                <option>Mars</option>
+                <option>The moon</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset id="secondFieldset">
+            <h2>Something to please Santa</h2>
+
+            <p>Which do you like better: the elves or the reindeer?</p>
+                <section class="inputRadio">
+                    <label for="elves">Elves</label>
+                    <input type="radio" id="elves" name="preference" value="elves">
+
+                    <label for="reindeer">Reindeer</label>
+                    <input type="radio" id="reindeer" name="preference" value="reindeer">
+                </section>
+
+            <p>What do you usually decorate your x-mas tree with?</p>
+                <section class="inputRadio">
+                    <label for="balls">Balls</label>
+                    <input type="radio" id="balls" name="decoration" value="balls">
+
+                    <label for="lights">Lights</label>
+                    <input type="radio" id="lights" name="decoration" value="lights">
+
+                    <label for="snow">Snow</label>
+                    <input type="radio" id="snow" name="decoration" value="snow">
+
+                    <label for="littleMen">Little men</label>
+                    <input type="radio" id="littleMen" name="decoration" value="littleMen">
+
+                    <label for="fireworks">Fireworks!</label>
+                    <input type="radio" id="fireworks" name="decoration" value="fireworks">
+                </section>
+
+
+        </fieldset>
+
+        <fieldset id="thirdFieldset">
+            <h2>At last... your request</h2>
+
+            <label for="yourRequest">So, what will it be?</label>
+            <textarea id="yourRequest"></textarea>
+        </fieldset>
+
+        <button id="sendButton" type="submit">Verzenden</button>
+    </form>
+</main>
+
+</body>
+
+</html>
