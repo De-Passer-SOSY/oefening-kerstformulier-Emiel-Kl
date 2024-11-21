@@ -11,23 +11,26 @@ main, header {
 }
 
 header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header > h1 {
+    color: #bd0008;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Pacifico, "Palatino Linotype", Georgia, serif;
 }
 
-p {
-    font-family: Roboto, "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 p, input, label, textarea {
-    font-size: 15px;
+    font-family: Roboto, "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
 }
 
 #logo {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
@@ -61,13 +64,38 @@ fieldset {
     border-radius: 10px;
 }
 
-label, input:not([type="radio"]) {
-    display: block;
+label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+label, input{
+    display: block;
+}
+
+select, textarea, .secondFieldsetInput, #firstFieldset > input {
+    width: 98%;
 }
 
 .inputRadio {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.inputRadio > label {
+    margin-right: 40px;
+}
+
+input,textarea, select {
+    border: solid 1px #F29920;
+    border-radius: 2px;
+
+}
+
+button {
+    padding: 5px;
+    margin-left: 89%;
+    border: none;
+    border-radius: 2px;
 }
